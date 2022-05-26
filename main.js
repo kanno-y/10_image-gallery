@@ -26,11 +26,11 @@ function trigger() {
   attr = btn.getAttribute("class");
   if (attr === "dark") {
     btn.setAttribute("class", "light");
-    btn.innerHTML = "Lighten";
+    btn.textContent = "Lighten";
     overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
   } else {
     btn.setAttribute("class", "dark");
-    btn.innerHTML = "Darken";
+    btn.textContent = "Darken";
     overlay.style.backgroundColor = "rgba(0, 0, 0, 0)";
   }
 }
